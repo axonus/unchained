@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+    a{
+    	color:blue;
+    	cursor:pointer;
+    	clear:both;
+    }
+    </style>
+</head>
+<body>
+	<form id="form-search" name="form-search">
+		<label for="artists">Artists</label>
+		<select name="artists" id="select-artists">
+			<option value="">Select Artist</option>
+		</select>
+
+		<br />
+		
+		<label for="instruments">Instruments</label>
+		<select name="instruments" id="select-instruments">
+			<option value="">Select Instrument</option>
+		</select>
+
+		<br />
+		
+		<label for="genres">Genres</label>
+		<select name="genres" id="select-genres">
+			<option value="">Select Genre</option>
+		</select>
+
+		<br />
+		
+		<label for="decades">Decades</label>
+		<select name="decades" id="select-decades">
+			<option value="">Select Decade</option>
+		</select>
+
+		<br />
+		
+		<label for="tempos">Tempos</label>
+		<select name="tempos" id="select-tempos">
+			<option value="">Select Tempo</option>
+		</select>
+		<br /><br />
+		<a id="form-search-reset">Reset Form</a>
+		<br />
+	</form>
+
+	<form name="tracks" id="form-tracks">
+		<table border="1" id="tracks-list">
+			<tbody>
+				<tr>
+					<th>id</th>
+					<th>artist</th>
+					<th>instrument</th>
+					<th>tempo</th>
+					<th>genre</th>
+					<th>decade</th>
+					<th>name</th>
+					<th>desc</th>
+					<th>download</th>
+					<th>sample</th>
+				</tr>
+			</tbody>
+		</table>	
+	
+	
+	</form>
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverIntent.js"></script>
+	<script type="text/javascript" src="js/jquery.cluetip.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>
